@@ -45,14 +45,15 @@ for x in range(len(candidates_unique)):
 
 election_winner = candidates_unique[max_index] 
 
-print('======================================================')
-print('|                  Election Results                  |')
-print('======================================================')
+print('Election Results')
+
+print("..................")
+
 print(f'Total Votes: {total_votes_length}')
-print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+
 for x in range(len(candidates_unique)):
     print(f'{candidates_unique[x]} : {pct[x]}% ({candidate_vote_count[x]})')
-print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+
 print(f'Election winner: {election_winner.upper()}')
-print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+
 

@@ -44,8 +44,7 @@ greatest_decrease = min(revenue_diff)
 # Print results 
 print("Financial Analysis")
 
-
-print("....................................................................................")
+print("..................")
 
 print(f"Total Months: {total_months}")
 
@@ -57,6 +56,7 @@ print(f"Greatest Increase in Profits: {months[revenue_diff.index(max(revenue_dif
 
 print(f"Greatest Decrease in Profits: {months[revenue_diff.index(min(revenue_diff))+1]} $ {int((greatest_decrease))}")
 
+# Write output
 
 with open("Analysis/output.txt", "w") as txtfile:
    
@@ -64,7 +64,7 @@ with open("Analysis/output.txt", "w") as txtfile:
     txtfile.write(".................." + "\n")
     txtfile.write("Total Months: " + str(total_months) + "\n")
     txtfile.write("Total: $" + str(total) + "\n")
-    txtfile.write("Average Change: $" + str(revenue_average) + "\n")
+    txtfile.write("Average Change: $" + str(round(revenue_average,2)) + "\n")
     txtfile.write("Greatest Increase in Profits: " + str(months[revenue_diff.index(max(revenue_diff))+1]) + " " + "$" + str(round(greatest_increase,0)) + "\n")
     txtfile.write("Greatest Decrease in Profits: " + str(months[revenue_diff.index(min(revenue_diff))+1]) + " " + "$" + str(greatest_decrease) + "\n")
     txtfile.close()
