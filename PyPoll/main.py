@@ -67,11 +67,11 @@ with open("Analysis/output.txt", "w") as txtfile:
    
     txtfile.write("Election Results" + "\n")
 
-    txtfile.write("........................... \n")
+    txtfile.write("............................ \n")
 
     txtfile.write(f'Total Votes: {total_votes_length}\n')
 
-    txtfile.write("............................ \n")
+    txtfile.write("............................. \n")
 
     for x in range(len(candidates_unique)):
         txtfile.write(f'{candidates_unique[x]} : {percent[x]}% ({candidate_vote_count[x]})\n')
