@@ -1,4 +1,4 @@
-# Importing os and csv file - Coaches, ...so hard not to type CVS :)
+# Importing os and csv file 
 import os
 import csv
 
